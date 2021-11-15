@@ -1,0 +1,23 @@
+.row {
+    display: grid;
+    grid-template-columns: repeat(12, 5fr);
+    grid-gap: 15px;
+}
+
+@media (min-width: 0) {
+    .col-xs {
+        grid-column-end: span 12;
+    }
+}
+
+@media (min-width: 768px) {
+    .col-sm {
+        grid-column-end: span 6;
+    }
+}
+
+@media (min-width: 940px) {
+    .col-md {
+        grid-column-end: span 4;
+    }
+}
